@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.DatabaseLoadingReposGUI">
+    <top>
+        <MenuBar fx:id="ReposDatabaseMenuBar" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Menu">
+                    <MenuItem mnemonicParsing="false" onAction="#LogOut" text="Log Out"/>
+                    <MenuItem mnemonicParsing="false" onAction="#HomeSceneMenu" text="Home"/>
+                    <MenuItem mnemonicParsing="false" onAction="#GithubPostsScene" text="Post"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Options">
+                    <MenuItem mnemonicParsing="false" onAction="#ProfileScene" text="Profile"/>
+                    <MenuItem mnemonicParsing="false" onAction="#PushesScene" text="Pushes"/>
+                    <MenuItem mnemonicParsing="false" onAction="#ReposScene" text="Repos"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Databases">
+                    <MenuItem mnemonicParsing="false" onAction="#ProfileDatabaseScene" text="Profile Database"/>
+                    <MenuItem mnemonicParsing="false" onAction="#PushesDatabaseScene" text="Pushes Database"/>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="ReposTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="ReposRepoName" prefWidth="56.0" text="RepoName"/>
+                <TableColumn fx:id="ReposDescription" prefWidth="56.0" text="Description"/>
+                <TableColumn fx:id="ReposUrl" prefWidth="56.0" text="URL"/>
+                <TableColumn fx:id="ReposStars" prefWidth="56.0" text="Stars"/>
+                <TableColumn fx:id="ReposWatcher" prefWidth="56.0" text="Watchers"/>
+                <TableColumn fx:id="ReposLanguage" prefWidth="56.0" text="Language"/>
+                <TableColumn fx:id="ReposLicense" prefWidth="56.0" text="License"/>
+                <TableColumn fx:id="ReposCreatedAt" prefWidth="56.0" text="CreatedAt"/>
+                <TableColumn fx:id="ReposUpdatedAt" prefWidth="56.0" text="UpdatedAt"/>
+                <TableColumn fx:id="ReposPushedAt" prefWidth="56.0" text="PushedAt"/>
+                <TableColumn fx:id="ReposCloneUrl" prefWidth="56.0" text="CloneURL"/>
+                <TableColumn fx:id="ReposAllowForking" prefWidth="56.0" text="AllowForking"/>
+                <TableColumn fx:id="ReposForks" prefWidth="56.0" text="Forks"/>
+                <TableColumn fx:id="ReposSHA" prefWidth="56.0" text="SHA"/>
+                <TableColumn fx:id="ReposInsertedAt" prefWidth="56.0" text="InsertedAt"/>
+                <TableColumn fx:id="ReposUsername" prefWidth="56.0" text="username"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

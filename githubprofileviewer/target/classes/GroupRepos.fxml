@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.GroupReposController">
+    <ListView fx:id="languageListView" prefHeight="200" />
+    <TableView fx:id="reposTableView" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="repoNameColumn" text="Repository Name" />
+            <TableColumn fx:id="ownerColumn" text="Owner" />
+        </columns>
+    </TableView>
+</VBox>

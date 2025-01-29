@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.SceneController">
+    <children>
+        <PasswordField fx:id="profileApiPlaceholder" layoutX="177.0" layoutY="172.0" prefHeight="28.0" prefWidth="246.0" promptText="Profile Api" translateZ="1.0" />
+        <Circle fill="#fd21ff" layoutX="14.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+        <Button fx:id="LogInButton" layoutX="249.0" layoutY="264.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="21.0" prefWidth="102.0" text="Log In" translateZ="1.0" />
+        <Circle fill="#674599" layoutX="601.0" layoutY="-5.0" radius="98.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fill="#821a79" layoutX="592.0" layoutY="405.0" radius="98.0" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fill="#2ca35c" layoutX="-18.0" layoutY="402.0" radius="98.0" stroke="BLACK" strokeType="INSIDE" />
+    </children>
+</Pane>

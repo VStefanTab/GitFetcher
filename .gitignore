@@ -1,0 +1,11 @@
+# ignore the .idea file
+.idea/*
+
+# ignore .png files
+*.png
+
+# ignore logs
+*.txt
+
+# ignore databases
+*.db

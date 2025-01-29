@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.DatabaseLoadingPushesGUI">
+    <top>
+        <MenuBar fx:id="PushesDatabaseMenuBar" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Menu">
+                    <MenuItem mnemonicParsing="false" onAction="#LogOut" text="Log Out"/>
+                    <MenuItem mnemonicParsing="false" onAction="#HomeSceneMenu" text="Home"/>
+                    <MenuItem mnemonicParsing="false" onAction="#GithubPostsScene" text="Post"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Options">
+                    <MenuItem mnemonicParsing="false" onAction="#ProfileScene" text="Profile"/>
+                    <MenuItem mnemonicParsing="false" onAction="#ReposScene" text="Repos"/>
+                    <MenuItem mnemonicParsing="false" onAction="#PushesScene" text="Pushes"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Database">
+                    <MenuItem mnemonicParsing="false" onAction="#ProfileDatabaseScene" text="Profile Database"/>
+                    <MenuItem mnemonicParsing="false" onAction="#ReposDatabaseScene" text="Repos Database"/>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="PushesTable" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="PushesUsername" prefWidth="90.0" text="username"/>
+                <TableColumn fx:id="PushesRepoName" prefWidth="90.0" text="repoName"/>
+                <TableColumn fx:id="PushesAuthorName" prefWidth="90.0" text="authorName"/>
+                <TableColumn fx:id="PushesEmail" prefWidth="90.0" text="email"/>
+                <TableColumn fx:id="PushesBranch" prefWidth="90.0" text="branch"/>
+                <TableColumn fx:id="PushesCommitNumber" prefWidth="90.0" text="commits number"/>
+                <TableColumn fx:id="PushesCommitSha" prefWidth="90.0" text="commit sha"/>
+                <TableColumn fx:id="PushesCommitMessage" prefWidth="90.0" text="commit message"/>
+                <TableColumn fx:id="PushesCreatedAt" prefWidth="90.0" text="Created at"/>
+                <TableColumn fx:id="PushesInsertedAt" prefWidth="90.0" text="Inserted at"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
